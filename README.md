@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - See more details in [`blog-post.component.spec.ts`](https://github.com/thiswallz/AngularTestStyleGuide/blob/master/src/app/blog/blog-post/blog-post.component.spec.ts)
 
-  > Why? This ensures that you can run the unit test faster(Important item, if you want to use CI/CD) and without side-effects focusing just in the unit test not an integration test
+  > Why? This ensures that you can run the unit test faster(Important item if you want to use CI/CD) and without side-effects focusing just in the unit test not an integration test
 
 ```javascript
 // bad
@@ -30,16 +30,10 @@ it(
     const spy = spyOn(blogApiService, "getPosts").and.returnValue(
       of([
         {
-          userId: 1,
-          id: 1,
-          title: "eprehenderit",
-          body: "st autem sunt rem eveniet architecto"
+          ...
         },
         {
-          userId: 1,
-          id: 2,
-          title: "qui est eache",
-          body: "periam non debitis posimus qui neque nisi nulla"
+          ...
         }
       ])
     );
