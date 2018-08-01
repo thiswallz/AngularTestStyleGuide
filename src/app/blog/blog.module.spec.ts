@@ -1,13 +1,13 @@
-import { BlogModule } from './blog.module';
+import { BlogModule } from "./blog.module";
 
-describe('BlogModule', () => {
+describe("BlogModule", () => {
   let blogModule: BlogModule;
 
   beforeEach(() => {
     blogModule = new BlogModule();
   });
 
-  it('should create an instance', () => {
+  it("should create an instance", () => {
     expect(blogModule).toBeTruthy();
   });
 });
