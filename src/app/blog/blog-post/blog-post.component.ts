@@ -10,6 +10,7 @@ import { Post } from "src/app/core/models/post.model";
 export class BlogPostComponent implements OnInit {
   constructor(private blogApiService: BlogApiService) {}
   public list: Post[] = [];
+  value: string = "100";
   ngOnInit() {
     this.blogApiService.getPosts().subscribe(response => {
       this.list = response;

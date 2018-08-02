@@ -6,9 +6,16 @@ import { BlogCommentComponent } from "./blog-comment/blog-comment.component";
 import { BlogApiService } from "./blog-api.service";
 import { HttpModule } from "@angular/http";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
-  imports: [CommonModule, HttpModule, HttpClientModule, CoreModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+    HttpModule,
+    HttpClientModule,
+    CoreModule
+  ],
   providers: [BlogApiService],
   declarations: [BlogPostComponent, BlogCommentComponent],
   exports: [BlogPostComponent, BlogCommentComponent]
